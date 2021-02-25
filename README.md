@@ -1,4 +1,4 @@
-# Australia - Australia - Monthly Fire Events in GIF using MODIS
+# Australia - Monthly Fire Events in GIF using MODIS
 
 
 You can even [link to CODE!](https://code.earthengine.google.com/244dffc743880a73bf650affe61a6169)
