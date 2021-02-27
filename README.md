@@ -35,21 +35,10 @@ var dataset = ee.Image('USGS/SRTMGL1_003');
 var elevation= dataset.select('elevation').clip(Australia);
 var elevation2 = elevation.visualize ({min: 0, max: 800, palette:Palet});
 
-//var empty = ee.Image().byte();
-//var Australia_style = empty.paint({featureCollection: Australia, color: 5, width: 1}).visualize({palette: '777777'});
-//var rgbVis = col.map(function(img) {return elevation2.blend(img.visualize(visParams))});
-//print(rgbVis.getVideoThumbURL(gifParams));
-
 var dataset = ee.Image('USGS/SRTMGL1_003');
 var elevation= dataset.select('elevation').clip(Australia);
 var elevation2 = elevation.visualize ({min: 0, max: 1000, palette:Palet});
 
-//Map.addLayer(elevation2);
-//var empty = ee.Image().byte();
-//var Australia_style = empty
-  //.paint({featureCollection: Australia, color: 5, width: 1})
-  // Convert to an RGB visualization image; set line color to black.
- // .visualize({palette: '777777'});
   
 //_______TIME STAMP_______________________
 var text = require('users/gena/packages:text')
